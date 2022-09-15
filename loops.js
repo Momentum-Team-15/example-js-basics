@@ -30,10 +30,31 @@ let answer = "yes"
 //     }
 // }
 // for loop
-let smiles = '😄'
-for (let i = 30; i >= 0; i--) {
-    // i is going to start at one and go up by one until it gets to 5. Before incrementing i up by 1, the code below will execute.
-    console.log("Value of i is: " + i + " You are awesome!  " + smiles)
-    smiles += '😄'
+// let smiles = '😄'
+// for (let i = 30; i >= 0; i--) {
+//     // i is going to start at one and go up by one until it gets to 5. Before incrementing i up by 1, the code below will execute.
+//     console.log("Value of i is: " + i + " You are awesome!  " + smiles)
+//     smiles += '😄'
+// }
+
+/* arrays are indicated by square brackets with elements 
+separated by commas*/
+// with arrays, we use for...of loops to perform the same
+// action on each item in the array
+let animals = ['🐶', '🦊', '🐞', '🐘', '🦦']
+
+for (let animal of animals) {
+    // for each single item in the array, do the stuff below
+    console.log("I feel like a " + item + " today.")
 }
+
+let prices = [4, 5, 3, 1, 2, 5, 5]
+
+let total = 0
+
+for (let price of prices) {
+    total += price
+}
+console.log("The price of your produce totals " + total + ' dollars')
+
 
